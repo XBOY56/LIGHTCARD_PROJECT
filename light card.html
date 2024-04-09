@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>liight card</title>
+        <link rel="stylesheet" href="mycss.css" type="text/css">
+    </head>
+    <body>
+        <div class="cursor"></div>
+        <!-- <div class="lightbeam"></div> -->
+        <div class="card-container">
+
+            <div class="card">
+                <div class="card-picture">
+                    <img src="img/air.png" alt="">
+                </div>
+                <div class="card-details">
+                    <h1 class="intro">Air force 1</h1>
+                    <p class="subtitles">Lorem ipsum dolor sit amet
+                    </p>
+                    <h2 class="price">
+                        <span>$30</span>.00</h2>
+                    <h2 class="buy">Buy now</h2>
+                    <small>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam fugit
+                        inventore eligendi, animi enim nobis reprehenderit! Illum cum cumque earum ut
+                        fuga nisi modi unde. Dolores placeat quas reiciendis vitae.
+                    </small>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-picture">
+                    <img src="img/air.png" alt="">
+                </div>
+                <div class="card-details">
+                    <h1 class="intro">Air force 1</h1>
+                    <p class="subtitles">Lorem ipsum dolor sit amet
+                    </p>
+                    <h2 class="price">
+                        <span>$30</span>.00</h2>
+                    <h2 class="buy">Buy now</h2>
+                    <small>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam fugit
+                        inventore eligendi, animi enim nobis reprehenderit! Illum cum cumque earum ut
+                        fuga nisi modi unde. Dolores placeat quas reiciendis vitae.
+                    </small>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            const cursor = document.querySelector(".cursor");
+            const card = document.querySelector(".card-container");
+
+            card.addEventListener("mouseover", () => {
+                cursor.style.display = "block";
+            });
+
+            window.addEventListener("mousein", () => {
+                cursor.style.display = "block";
+            });
+            card.addEventListener("mousemove", (e) => {
+                let X = e.pageX;
+                let Y = e.pageY;
+
+                cursor.style.left = X + "px";
+                cursor.style.top = Y + "px";
+                cursor.style.display = "block";
+
+            });
+
+            card.addEventListener("mouseout", () => {
+                cursor.style.display = "none";
+            });
+            // const cursor = document.querySelector(".cursor");
+            // const container = document.querySelector(".card-container");
+
+            // container.addEventListener("mouseover", (e) => {
+            //     if (e.target.classList.contains('card')) {
+            //         cursor.style.display = "block";
+            //     }
+                
+            // });
+
+            // container.addEventListener("mousemove", (e) => {
+            //     if (e.target.classList.contains('card')) {
+            //     let X = e.pageX;
+            //     let Y = e.pageY;
+
+            //     cursor.style.left = X + "px";
+            //     cursor.style.top = Y + "px";
+            //     // cursor.style.display = "block";
+            //     }
+
+            // });
+
+            // container.addEventListener("mouseout", () => {
+            //     cursor.style.display = "none";
+            // });
+        </script>
+    </body>
+</html>
